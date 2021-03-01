@@ -1,4 +1,5 @@
-/* Tema_3  [2019-2020]
+/**
+ * Tema_3  [2019-2020]
  * >> Academia Network <<
  *
  * Mihai Barbu
@@ -13,8 +14,6 @@ Pentru autori am definit o structura - author - ce contine id-ul, numele si inst
 Astfel am creat o lista de articole List, care contine noduri - paper - cu infromatii de tip article.
 
 Toate task-urile temei au fost rezolvate utilizand hastable-uri cu direct chaining.
-
-Pentru a obtine hash-ul unui string de caractere am utilizat functia hash_function_strings() din laborator.
 
 Am definit structura PublData astfel:
 	-> hmax = numarul maxim de bucket-uri (in cazul nostru 50000);
@@ -73,7 +72,6 @@ Pentru bucket-urile de mai sus am definit structurile:
 
  --> cited_paper_node -> retine id-ul, anul si numele unui articol citata -- util pentru task_5
                                                                                          ++ task_10 -- pentru lista de venue-uri
-		  	 
 
 
 Task 0:	
@@ -139,9 +137,7 @@ Task 0:
 
   --> Task_9 - get_reading_order():
 
-          - am incercat sa sortam articolele dupa nivel, respectiv dupa anul de aparitie
-
-		-- nu prea ne-a dat totusi =))
+          - am sortat articolele dupa nivel, respectiv dupa anul de aparitie
 
   --> Task_10 - find_best_coordinator():
 
@@ -151,3 +147,4 @@ Task 0:
                    unui articol;
 			--- am refolosit structura Cited_List pentru a retine numele venue-rilor care au fost deja folosite - am adaugat in cited_paper_node variabila fact care
                             retine factorul de impact al venue-ului.
+
